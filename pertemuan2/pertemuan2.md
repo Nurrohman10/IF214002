@@ -3,9 +3,7 @@ Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
 
 # Deskripsi 
 Sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab 
-pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut.
-
-# Fitur-Fitur
+pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut Dengan Fitur-Fitur:
 1. Menyimpan Hasil Lab
 2. Mengirimkan Hasil Lab
 3. Mengunduh dan Mengupload Hasil Lab
