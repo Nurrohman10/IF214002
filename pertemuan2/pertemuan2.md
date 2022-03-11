@@ -6,7 +6,7 @@ Sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab
 pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut Dengan Fitur-Fitur:
 1. Menyimpan Hasil Lab
 2. Mengirimkan Hasil Lab
-3. Mengunduh dan Mengupload Hasil Lab
+3. Mengunduh dan Mengunggah Hasil Lab
 
 # Entitas dan Atribut
 ## Dokter
