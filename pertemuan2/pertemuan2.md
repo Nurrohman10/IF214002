@@ -4,6 +4,8 @@ Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
 # Deskripsi 
 sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut.
 
+# Fitur-Fitur
+
 ## Entitas dan Atribut
 # Dokter
 1. Id
@@ -16,7 +18,7 @@ sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien
 # Pasien
 1. Id
 2. Nama pasien
-3. jenis kelamin
+3. Jenis kelamin
 4. Alamat
 5. Jenis penyakit (spesialisasi)
 6. nama dokter
