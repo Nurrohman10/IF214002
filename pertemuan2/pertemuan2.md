@@ -2,7 +2,7 @@
 Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
 
 # Deskripsi 
-sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut.
+Sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut.
 
 # Fitur-Fitur
 
@@ -11,7 +11,7 @@ sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien
 1. Id
 2. Nama dokter
 3. Jenis kelamin 
-4. Spesialisasi
+4. Jenis penyakit (Spesialisasi)
 5. Nama Pasien
 6. Alamat 
 
@@ -21,12 +21,12 @@ sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien
 3. Jenis kelamin
 4. Alamat
 5. Jenis penyakit (spesialisasi)
-6. nama dokter
+6. Nama dokter
 
 ## Laboratorium
 1. Id
 2. Nama pasien
 3. Alamat
-4. nama dokter
-5. jenis penyakit (Spesialisasi) 
-6. jenis pemeriksaan
+4. Nama dokter
+5. Jenis penyakit (Spesialisasi) 
+6. Jenis pemeriksaan
