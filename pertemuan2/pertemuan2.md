@@ -1,4 +1,4 @@
-# ide solusi 
+# Ide solusi 
 Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
 
 # Deskripsi 
@@ -15,7 +15,7 @@ sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien
 
 # Pasien
 1. Id
-2. nama pasien
+2. Nama pasien
 3. jenis kelamin
 4. Alamat
 5. Jenis penyakit (spesialisasi)
