@@ -1,5 +1,5 @@
 # Ide Solusi 
-Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
+Membuat sistem terintegrasi antara informasi hasil lab dan dokter .
 
 # Deskripsi 
 Sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab 
