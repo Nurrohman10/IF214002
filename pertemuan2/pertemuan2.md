@@ -1,4 +1,4 @@
-# Ide solusi 
+# Ide Solusi 
 Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
 
 # Deskripsi 
