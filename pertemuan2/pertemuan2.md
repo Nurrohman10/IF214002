@@ -1,9 +1,9 @@
-ide solusi : Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
+#ide solusi : Membuat sistem terintegrasi antara informasi hasil lab dan dokter.
 
-Deskripsi : sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut.
+#Deskripsi : sistem ini dibuat untuk mempermudah integrasi informasi anatara hasil lab pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut.
 
-Entitas dan Atribut
-Dokter
+##Entitas dan Atribut
+#Dokter
 1.Id
 2.Nama dokter
 3.Jenis kelamin 
@@ -11,7 +11,7 @@ Dokter
 5.Nama Pasien
 6.Alamat 
 
-Pasien
+#Pasien
 1.Id
 2.nama pasien
 3.jenis kelamin
@@ -19,7 +19,7 @@ Pasien
 5.Jenis penyakit (spesialisasi)
 6.nama dokter
 
-Laboratorium
+#Laboratorium
 1.Id
 2.Nama pasien
 3.Alamat
