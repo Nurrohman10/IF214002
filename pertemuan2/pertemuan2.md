@@ -41,4 +41,6 @@ pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut D
 4. Nama dokter
 5. Jenis penyakit (Spesialisasi) 
 6. Jenis pemeriksaan
+
+##Screenshot
 ![image](https://user-images.githubusercontent.com/100698149/159932799-ac859dc7-0d79-4619-a193-5f2fdfa1d09f.png)
