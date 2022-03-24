@@ -25,6 +25,15 @@ pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut D
 5. Jenis penyakit (spesialisasi)
 6. Nama dokter
 
+## Admin lab
+1. Id
+2. Nama pasien
+3. Alamat
+4. Nama dokter
+5. Jenis penyakit (Spesialisasi) 
+6. Jenis pemeriksaan
+
+
 ## Laboratorium
 1. Id
 2. Nama pasien
