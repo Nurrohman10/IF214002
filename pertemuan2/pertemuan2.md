@@ -27,11 +27,11 @@ pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut D
 
 ## Admin lab
 1. Id
-2. Nama pasien
+2. Nama adm
 3. Alamat
 4. Nama dokter
 5. Jenis penyakit (Spesialisasi) 
-6. Jenis pemeriksaan
+6. Jenis kelamin
 
 
 ## Laboratorium
