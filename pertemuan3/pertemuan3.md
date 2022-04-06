@@ -39,3 +39,12 @@ pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut D
 2. Waktu 
 3. Jenis pemeriksaan
 
+## Pemeriksaan
+1. ID Pasien
+2. ID Lab
+3. ID Admin lab
+4. Waktu
+5. Kategori
+6. Hasil
+7. Status pengiriman hasil
+8. Waktu pengiriman hasil
