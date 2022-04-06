@@ -47,8 +47,5 @@ pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut D
 7. Status pengiriman hasil
 8. Waktu pengiriman hasil
 
-
-## Screenshot
-![image](https://user-images.githubusercontent.com/100698149/159932799-ac859dc7-0d79-4619-a193-5f2fdfa1d09f.png)
 ## Update 
 ![image](https://user-images.githubusercontent.com/100698149/161969037-ef5ec2c9-8e59-4bae-8b8f-d3e0fa1aab5d.png)
