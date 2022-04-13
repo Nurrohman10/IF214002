@@ -17,11 +17,11 @@
 
 
 # Tabel Admin Lab
-|🔑ID_Admin_Lab|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit|Jenis_Pemeriksaan|
-|---|---|---|---|---|---|---|
-|1|asep kudt|087745671111|asepppus|sukaweing Kaler|@asepppgmail.com|1|
-|2|alip Mandalika|087899881212|alippp|caringin Kidul|@alipsndahgmail.com|1|
-|3|friday day|087899881212|afridayy|negla|@friday.gmailcom|1|
+|🔑ID_Admin_Lab|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
+|---|-------|------|--|---|---|---|
+|1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|Tes Uji Protein C - Reaktif|
+|2| Drg. Wiena Manggala Putri|Maylan Nada|P|Cirebon|Gigi Dan Mulut|Sondasi|
+|3| Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|Magnetic Resonance Imaging (MRI)|
 
 
 # Tabel Pemeriksaan
