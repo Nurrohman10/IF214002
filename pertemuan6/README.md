@@ -2,7 +2,7 @@
 
 # Tabel Dokter
 |🔑ID_Dokter|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit|Jenis_Pemeriksaan|
-|---|------|-----|---|---|---|---|
+|---|--------|-----|---|---|---|---|
 |1|dr. Meliana, Sp. A|Mahran Rangga|asepppus|sukaweing Kaler|@asepppgmail.com|1|
 |2| Drg. Wiena Manggala Putri|Maylan Nada|alippp|caringin Kidul|@alipsndahgmail.com|1|
 |3| Dr. Alvin Nursalim, SpPD|Athalia Adzani W|afridayy|negla|@friday.gmailcom|1|
