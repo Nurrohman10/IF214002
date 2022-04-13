@@ -1,11 +1,11 @@
 ## Tabel Normalisasi
 
 # Tabel Dokter
-|🔑ID_Dokter|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit|Jenis_Pemeriksaan|
+|🔑ID_Dokter|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
 |---|-------|------|--|---|---|---|
-|1|dr. Meliana, Sp. A|Mahran Rangga|L|sukaweing Kaler|@asepppgmail.com|1|
-|2| Drg. Wiena Manggala Putri|Maylan Nada|P|caringin Kidul|@alipsndahgmail.com|1|
-|3| Dr. Alvin Nursalim, SpPD|Athalia Adzani W|P|negla|@friday.gmailcom|1|
+|1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|1|
+|2| Drg. Wiena Manggala Putri|Maylan Nada|P|Cirebon|Gigi Dan Mulut|1|
+|3| Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|1|
 
 
 # Tabel Pasien
