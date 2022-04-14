@@ -5,7 +5,7 @@
 ## contoh pemanfaatan data Historis
 Archive Transaksi Lampau
 ## Perusahaan
-Halodoc
+## PT Halodoc
 
 
 ||Karyawan|
