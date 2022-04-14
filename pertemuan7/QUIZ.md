@@ -1,6 +1,6 @@
-#Pemodelan Data Historis
+# Pemodelan Data Historis
 
-#Quiz
+# Quiz
 
 ## contoh pemanfaatan data Historis
 Archive transaksi lampau
