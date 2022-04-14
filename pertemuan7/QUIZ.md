@@ -25,7 +25,7 @@ Halodoc
 |PK|ID Karyawan|
 ||Tanggal Mulai Kerja|
 ||Gaji Bulanan|
-
+||Jabatan|
 
 
 ```sql
