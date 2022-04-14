@@ -3,7 +3,7 @@
 # Quiz
 
 ## contoh pemanfaatan data Historis
-Archive transaksi lampau
+Archive Transaksi Lampau
 ## Perusahaan
 Halodoc
 
