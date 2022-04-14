@@ -14,6 +14,8 @@ Halodoc
 ||Nama|
 ||Gaji Bulanan|
 ||Tanggal Mulai Gaji|
+||Jabatan|
+||Alamat|
 
 
 ||Histori Gaji|
