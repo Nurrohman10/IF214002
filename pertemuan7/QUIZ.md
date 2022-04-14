@@ -31,6 +31,13 @@ Archive Transaksi Lampau
 ||Gaji Bulanan|
 ||Jabatan|
 
+||Histori Alamat|
+|---|---|
+|PK|ID Karyawan|
+||Tanggal Mulai Kerja|
+||Alamat Terbaru|
+
+
 
 ```sql
 CREATE TABLE
