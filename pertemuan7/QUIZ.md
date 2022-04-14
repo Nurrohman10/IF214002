@@ -19,6 +19,10 @@ Halodoc
 ||Alamat|
 
 
+
+
+
+
 ||Histori Gaji|
 |---|---|
 |PK|Tanggal Mulai Gaji|
