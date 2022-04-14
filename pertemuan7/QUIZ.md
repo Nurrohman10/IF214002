@@ -36,12 +36,24 @@ Archive Transaksi Lampau
 CREATE TABLE
 ```
 ```python
-print("Quiz Pertemuan 7")
-print("Terakhir dibaca")
-databaseproducts_ tbl(
-   id_buku INT NOT NULL AUTO_INCREMENT,
-   Nama_buku VARCHAR(100) NOT NULL,
-   product_manufacturer VARCHAR(40) NOT NULL,
-   submission_date DATE,
-   PRIMARY KEY ( product_id )
+
+databasekaryawan_ tbl(
+   karyawan_id INT NOT NULL AUTO_INCREMENT,
+   nama_karyawan VARCHAR(100) NOT NULL,
+   gaji bulanan INT NOT NULL,
+   tanggal_mulai_gaji_DATETIME,
+   tanggal_masuk_date DATETIME,
+   alamat_sekarang VARCHAR(100)
+   Jabatan_sekarang CHAR(20)
+   PRIMARY KEY ( karyawan_id )
 );
+datahistorigaji_ tbl(
+   karyawan_id INT NOT NULL AUTO_INCREMENT,
+   gaji bulanan INT NOT NULL,
+   tanggal_mulai_gaji_DATETIME,
+   PRIMARY KEY ( tanggal_mulai_gaji )
+);
+datahistorialamat_ tbl(
+   karyawan_id INT NOT NULL AUTO_INCREMENT,
+   tanggal_masuk_date DATETIME,
+   alamat_sekarang VARCHA…
