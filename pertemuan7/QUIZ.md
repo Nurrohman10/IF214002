@@ -14,6 +14,7 @@ Halodoc
 ||Nama|
 ||Gaji Bulanan|
 ||Tanggal Mulai Gaji|
+||Tanggal Mulai Kerja|
 ||Jabatan|
 ||Alamat|
 
@@ -22,6 +23,7 @@ Halodoc
 |---|---|
 |PK|Tanggal Mulai Gaji|
 |PK|ID Karyawan|
+||Tanggal Mulai Kerja|
 ||Gaji Bulanan|
 
 
