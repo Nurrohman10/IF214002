@@ -1,6 +1,6 @@
-## Tabel Normalisasi
+# Tabel Normalisasi
 
-# Tabel Dokter
+## Tabel Dokter
 |🔑ID_Dokter|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
 |---|-------|------|--|---|---|---|
 |1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|Tes Uji Protein C - Reaktif|
@@ -8,7 +8,7 @@
 |3| Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|Magnetic Resonance Imaging (MRI)|
 
 
-# Tabel Pasien
+## Tabel Pasien
 |🔑ID_Pasien|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
 |---|-------|------|--|---|---|---|
 |1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|Tes Uji Protein C - Reaktif|
@@ -16,7 +16,7 @@
 |3| Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|Magnetic Resonance Imaging (MRI)|
 
 
-# Tabel Admin Lab
+## Tabel Admin Lab
 |🔑ID_Admin_Lab|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
 |---|-------|------|--|---|---|---|
 |1. LUSD-1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|Tes Uji Protein C - Reaktif|
@@ -24,7 +24,7 @@
 |3. LUPD-1|RD-1|Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|Magnetic Resonance Imaging (MRI)|
 
 
-# Tabel Pemeriksaan
+## Tabel Pemeriksaan
 |🔑ID_Pasien|ID_Admin_Lab|ID_Lab|Waktu|Kategori|Hasil|Status_Pengriman_Hasil|Waktu_Pengriman_Hasil|
 |---|---|---|---|---|---|---|---|
 |1|LUSD-1|UP-1|10:15|D|Negative (-)|B|12:45|
@@ -32,7 +32,7 @@
 |3|LUPD-1|RD-1|09:15|PG|Negative (-)|B|17:55|
 
 
-# Tabel Laboratorium
+## Tabel Laboratorium
 |🔑ID_Pasien|ID_Admin_Lab|ID_Lab| 
 |---|---|---| 
 |1|LUSD-1|UP-1|  
