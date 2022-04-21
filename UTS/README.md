@@ -7,7 +7,7 @@ Sistem ini dibuat untuk mempermudah integrasi informasi anatara laboratorium dan
 B.	Fitur - Fitur
 1.	Menyimpan Hasil Lab
 2.	Mengirimkan Hasil Lab
-3. ERD notasi Chen 
+C.  ERD notasi Chen 
 ![image](https://user-images.githubusercontent.com/100698149/164351880-c852f8db-73b0-4055-9ed5-d3fe306076bb.png)
-4. ERD notasi Crow Foot
+D.  ERD notasi Crow Foot
 ![image](https://user-images.githubusercontent.com/100698149/164354504-d2b1dbb9-9952-46bc-8df4-7763ed01af09.png)
