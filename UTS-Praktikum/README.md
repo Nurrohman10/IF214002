@@ -1,6 +1,6 @@
 # 1. Jelaskan contoh-contoh perintah SQL beserta kegunannya !
 
-## 1. Perintah SELECT
+## 1.1. Perintah SELECT
 ### Perintah SELECT merupakan perintah dasar SQL yang di gunakan untuk memilih data dari database. Data yang di kembalikan di simpan dalam tabel yang di sebut result-set.
 
 ### Sintaks
@@ -17,7 +17,7 @@
 |---|---|
 ### Perintah pertama di atas di gunakan untuk menyeleksi kolom NIS, NAMA, dan ALAMAT dari tabel SISWA. sedangkan perintah kedua di gunakan untuk menyeleksi semua kolim dari tabel SISWA.
 
-## 2. Perintah SELECT DISTINCT
+## 1.2. Perintah SELECT DISTINCT
 ### Perintah SELECT DISTINCT merupakan perintah dasar SQL yang di gunakan untuk mengembalikan hanya nilai yang berbeda dari dalam sebuah tabel, dengan kata lain semua record duplikat (record dengan nilai yang sama) yang terdapat pada tabel akan di anggap sebagai satu record/nilai.
 
 ### Sintaks
@@ -28,7 +28,7 @@
 |---|---|
 ### Perintah di atas di gunakan untuk menampilkan kolom ALAMAT dari tabel SISWA dengan mengabaikan nilai yang duplikat, misalnya terdapat 10 siswa dengan alamat ‘Jakarta’, 15 siswa dengan alamat ‘Bandung’, 20 siswa dengan alamat ‘Depok’, dan seterusnya, result-set hanya menampilkan daftar alamat di antaranya ‘Jakarta’, ‘Bandung’, dan ‘Depok’ masing-masing 1 record.
 
-## 3. Perintah WHERE
+## 1.3. Perintah WHERE
 ### Perintah WHERE merupakan perintah dasar SQL yang di gunakan untuk mem-filter hasil SELECT dengan mengekstrak record yang memenuhi persyaratan tertentu.
 
 ### Sintaks
@@ -48,7 +48,7 @@
 - LIKE Cari pola yang ‘seperti’ parameter
 - IN Menentukan kemungkinan nilai dari beberapa kolom
 
-## 4. Perintah (operator) AND, OR dan NOT
+## 1.4. Perintah (operator) AND, OR dan NOT
 ### Operator AND, OR dan NOT merupakan perintah dasar SQL yang biasanya di kombinasikan dengan perintah WHERE. Ketiganya di gunakan untuk mem-filter record berdasarkan suatu kondisi, operator AND akan menampilkan record apabila semua kondisi bernilai TRUE, operator OR akan menampilkan record apabila salah satu kondisi bernilai TRUE, sedangkan operator NOT akan menampilkan record apabila semua kondisi bernilai FALSE.
 
 ### Sintaks AND
@@ -75,7 +75,7 @@
 |---|---|
 ### Perintah di atas akan menampilkan semua record NIS dan NAMA dari tabel SISWA kecuali record siswa yang beralamat di ‘Jakarta’.
 
-## 5. Perintah ORDER BY
+## 1.5. Perintah ORDER BY
 ### Perintah ORDER BY merupakan perintah dasar SQL yang di gunakan untuk mengurutkan result-set dalam pengurutan ‘ascending’ atau ‘descending’. Secara default perintah ORDER BY menampilkan record dalam pengurutan ‘ascending’ (‘ASC’). Untuk mengurutkan ‘descending’, gunakan kata kunci ‘DESC’.
 
 ### Sintaks
