@@ -86,5 +86,44 @@
 |---|---|
 #### Perintah di atas akan menampilkan result-set berupa field NIS dan NAMA dari tabel SISWA dengan di urutkan berdasarkan TAHUN_LAHIR secara descending, artinya tahun lahir akan di tampilkan mulai dari yang terbesar (siswa termuda) hingga terkecil (siswa termuda).
 
-## 2. Rancang solusi digital dari satu permasalahan yang ada di sekitar Anda.
+### 2. Rancang solusi digital dari satu permasalahan yang ada di sekitar Anda.
 #### A. Berdasarkan ERD yang telah dibuat, buatlah implementasi basis data dari ERD tersebut dalam bentuk tabel basis data lengkap dengan Primary Key, Foreign Key dengan menggunakan perintah CREATE TABLE bahasa SQL. Anda dapat menggunakan vendor basis data yang Anda sukai (MySQL / PostgreSQL / SQL Server / dsb.). Jika belum sempat install basis data di laptop, bisa menggunakan sqliteonline.com untuk mengecek keberhasilan pembuatan tabelnya.
+
+### Tabel Dokter
+|🔑ID_Dokter|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
+|---|-------|------|--|---|---|---|
+|1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|Tes Uji Protein C - Reaktif|
+|2| Drg. Wiena Manggala Putri|Maylan Nada|P|Cirebon|Gigi Dan Mulut|Sondasi|
+|3| Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|Magnetic Resonance Imaging (MRI)|
+
+
+### Tabel Pasien
+|🔑ID_Pasien|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
+|---|-------|------|--|---|---|---|
+|1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|Tes Uji Protein C - Reaktif|
+|2| Drg. Wiena Manggala Putri|Maylan Nada|P|Cirebon|Gigi Dan Mulut|Sondasi|
+|3| Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|Magnetic Resonance Imaging (MRI)|
+
+
+### Tabel Admin Lab
+|🔑ID_Admin_Lab|Nama_Dokter|Nama_Pasien|Jenis_Kelamin|alamat|Jenis_Penyakit(spesialisasi)|Jenis_Pemeriksaan|
+|---|-------|------|--|---|---|---|
+|1. LUSD-1|dr. Meliana, Sp. A|Mahran Rangga|L|Purwakarta|Anak|Tes Uji Protein C - Reaktif|
+|2. LUGM-1|Drg. Wiena Manggala Putri|Maylan Nada|P|Cirebon|Gigi Dan Mulut|Sondasi|
+|3. LUPD-1|RD-1|Dr. Alvin Nursalim, SpPD|Athalia Adzani|P|Yogyakarta|Penyakit Dalam|Magnetic Resonance Imaging (MRI)|
+
+
+### Tabel Pemeriksaan
+|🔑ID_Pasien|ID_Admin_Lab|ID_Lab|Waktu|Kategori|Hasil|Status_Pengriman_Hasil|Waktu_Pengriman_Hasil|
+|---|---|---|---|---|---|---|---|
+|1|LUSD-1|UP-1|10:15|D|Negative (-)|B|12:45|
+|2|LUGM-1|PG-1|09:30|G|O|P|O|
+|3|LUPD-1|RD-1|09:15|PG|Negative (-)|B|17:55|
+
+
+### Tabel Laboratorium
+|🔑ID_Pasien|ID_Admin_Lab|ID_Lab| 
+|---|---|---| 
+|1|LUSD-1|UP-1|  
+|2|LUGM-1|PG-1| 
+|3|LUPD-1|RD-1| 
