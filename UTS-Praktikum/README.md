@@ -48,33 +48,32 @@
 - LIKE Cari pola yang ‘seperti’ parameter
 - IN Menentukan kemungkinan nilai dari beberapa kolom
 
-4. Perintah (operator) AND, OR dan NOT
+## 4. Perintah (operator) AND, OR dan NOT
+### Operator AND, OR dan NOT merupakan perintah dasar SQL yang biasanya di kombinasikan dengan perintah WHERE. Ketiganya di gunakan untuk mem-filter record berdasarkan suatu kondisi, operator AND akan menampilkan record apabila semua kondisi bernilai TRUE, operator OR akan menampilkan record apabila salah satu kondisi bernilai TRUE, sedangkan operator NOT akan menampilkan record apabila semua kondisi bernilai FALSE.
 
-Operator AND, OR dan NOT merupakan perintah dasar SQL yang biasanya di kombinasikan dengan perintah WHERE. Ketiganya di gunakan untuk mem-filter record berdasarkan suatu kondisi, operator AND akan menampilkan record apabila semua kondisi bernilai TRUE, operator OR akan menampilkan record apabila salah satu kondisi bernilai TRUE, sedangkan operator NOT akan menampilkan record apabila semua kondisi bernilai FALSE.
+### Sintaks AND
+||SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi1 AND kondisi2 AND kondisi3 ...;|
+|---|---|
+### Contoh AND
+||SELECT nis, nama FROM siswa WHERE alamat='Jakarta' AND tahun_lahir='2000'|
+|---|---|
+### Perintah di atas akan menampilkan record NIS dan NAMA dari tabel SISWA dengan ALAMAT di JAKARTA dan TAHUN_LAHIR “2000”, artinya record siswa yang lahir di tahun “2000” namun tidak beralamat di “Jakarta: atau siswa yang beralamat di “Jakarta” namaun lahir bukan pada tahun “2000” tidak akan di tampilkan.
 
-Sintaks AND
+### Sintaks OR
+||SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi1 OR kondisi2 OR kondisi3 ...;|
+|---|---|
+### Contoh OR
+||SELECT nis, nama FROM siswa WHERE alamat='Jakarta' OR alamat='Bandung'|
+|---|---|
+### Perintah di atas akan menampilkan record NIS dan NAMA dari tabel SISWA dengan ALAMAT di “JAKARTA” atau di “Bandung”, artinya record siswa yang beralamat di “Jakarta” dan di “Bandung” saja yang akan di tampilkan.
 
-SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi1 AND kondisi2 AND kondisi3 ...;
-Contoh AND
-
-SELECT nis, nama FROM siswa WHERE alamat='Jakarta' AND tahun_lahir='2000'
-Perintah di atas akan menampilkan record NIS dan NAMA dari tabel SISWA dengan ALAMAT di JAKARTA dan TAHUN_LAHIR “2000”, artinya record siswa yang lahir di tahun “2000” namun tidak beralamat di “Jakarta: atau siswa yang beralamat di “Jakarta” namaun lahir bukan pada tahun “2000” tidak akan di tampilkan.
-
-Sintaks OR
-
-SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi1 OR kondisi2 OR kondisi3 ...;
-Contoh OR
-
-SELECT nis, nama FROM siswa WHERE alamat='Jakarta' OR alamat='Bandung'
-Perintah di atas akan menampilkan record NIS dan NAMA dari tabel SISWA dengan ALAMAT di “JAKARTA” atau di “Bandung”, artinya record siswa yang beralamat di “Jakarta” dan di “Bandung” saja yang akan di tampilkan.
-
-Sintaks NOT
-
-SELECT kolom1, kolom2, ... FROM nama_tabel WHERE NOT kondisi;
-Contoh NOT
-
-SELECT nis, nama FROM siswa WHERE NOT alamat='Jakarta'
-Perintah di atas akan menampilkan semua record NIS dan NAMA dari tabel SISWA kecuali record siswa yang beralamat di ‘Jakarta’.
+### Sintaks NOT
+||SELECT kolom1, kolom2, ... FROM nama_tabel WHERE NOT kondisi;|
+|---|---|
+### Contoh NOT
+||SELECT nis, nama FROM siswa WHERE NOT alamat='Jakarta'|
+|---|---|
+### Perintah di atas akan menampilkan semua record NIS dan NAMA dari tabel SISWA kecuali record siswa yang beralamat di ‘Jakarta’.
 
 5. Perintah ORDER BY
 
@@ -83,7 +82,9 @@ Perintah ORDER BY merupakan perintah dasar SQL yang di gunakan untuk mengurutkan
 Sintaks
 
 SELECT kolom1, kolom2, ... FROM nama_tabel ORDER BY column DESC;
+|---|---|
 Contoh
 
 SELECT nis, nama FROM siswa ORDER BY tahun_lahir DESC;
+|---|---|
 Perintah di atas akan menampilkan result-set berupa field NIS dan NAMA dari tabel SISWA dengan di urutkan berdasarkan TAHUN_LAHIR secara descending, artinya tahun lahir akan di tampilkan mulai dari yang terbesar (siswa termuda) hingga terkecil (siswa termuda).
