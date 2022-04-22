@@ -26,17 +26,16 @@
 |---|---|
 ### Perintah di atas di gunakan untuk menampilkan kolom ALAMAT dari tabel SISWA dengan mengabaikan nilai yang duplikat, misalnya terdapat 10 siswa dengan alamat ‘Jakarta’, 15 siswa dengan alamat ‘Bandung’, 20 siswa dengan alamat ‘Depok’, dan seterusnya, result-set hanya menampilkan daftar alamat di antaranya ‘Jakarta’, ‘Bandung’, dan ‘Depok’ masing-masing 1 record.
 
-3. Perintah WHERE
+# 3. Perintah WHERE
+### Perintah WHERE merupakan perintah dasar SQL yang di gunakan untuk mem-filter hasil SELECT dengan mengekstrak record yang memenuhi persyaratan tertentu.
 
-Perintah WHERE merupakan perintah dasar SQL yang di gunakan untuk mem-filter hasil SELECT dengan mengekstrak record yang memenuhi persyaratan tertentu.
-
-Sintaks
-
-SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi;
-Sintaks
-
-SELECT nis, nama FROM siswa WHERE alamat='jakarta';
-Perintah di atas di gunakan untuk mengekstraksi data (NIS dan NAMA) dari tabel SISWA dengan kondisi “field ALAMAT berisi nilai JAKARTA”. Perintah di atas menggunakan operator sama dengan (‘=’), untuk operator lain yang di dukung perintah WHERE, lihat list di bawah ini.
+### Sintaks
+||SELECT kolom1, kolom2, ... FROM nama_tabel WHERE kondisi;|
+|---|---|
+### Sintaks
+||SELECT nis, nama FROM siswa WHERE alamat='jakarta';|
+|---|---|
+### Perintah di atas di gunakan untuk mengekstraksi data (NIS dan NAMA) dari tabel SISWA dengan kondisi “field ALAMAT berisi nilai JAKARTA”. Perintah di atas menggunakan operator sama dengan (‘=’), untuk operator lain yang di dukung perintah WHERE, lihat list di bawah ini.
 
 =  Sama dengan
 <> Tidak sama dengan, pada beberapa versi SQL, operator yang di gunakan adalah !=
