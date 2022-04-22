@@ -75,16 +75,13 @@
 |---|---|
 ### Perintah di atas akan menampilkan semua record NIS dan NAMA dari tabel SISWA kecuali record siswa yang beralamat di ‘Jakarta’.
 
-5. Perintah ORDER BY
+## 5. Perintah ORDER BY
+### Perintah ORDER BY merupakan perintah dasar SQL yang di gunakan untuk mengurutkan result-set dalam pengurutan ‘ascending’ atau ‘descending’. Secara default perintah ORDER BY menampilkan record dalam pengurutan ‘ascending’ (‘ASC’). Untuk mengurutkan ‘descending’, gunakan kata kunci ‘DESC’.
 
-Perintah ORDER BY merupakan perintah dasar SQL yang di gunakan untuk mengurutkan result-set dalam pengurutan ‘ascending’ atau ‘descending’. Secara default perintah ORDER BY menampilkan record dalam pengurutan ‘ascending’ (‘ASC’). Untuk mengurutkan ‘descending’, gunakan kata kunci ‘DESC’.
-
-Sintaks
-
-SELECT kolom1, kolom2, ... FROM nama_tabel ORDER BY column DESC;
+### Sintaks
+||SELECT kolom1, kolom2, ... FROM nama_tabel ORDER BY column DESC;|
 |---|---|
-Contoh
-
-SELECT nis, nama FROM siswa ORDER BY tahun_lahir DESC;
+### Contoh
+||SELECT nis, nama FROM siswa ORDER BY tahun_lahir DESC;|
 |---|---|
-Perintah di atas akan menampilkan result-set berupa field NIS dan NAMA dari tabel SISWA dengan di urutkan berdasarkan TAHUN_LAHIR secara descending, artinya tahun lahir akan di tampilkan mulai dari yang terbesar (siswa termuda) hingga terkecil (siswa termuda).
+### Perintah di atas akan menampilkan result-set berupa field NIS dan NAMA dari tabel SISWA dengan di urutkan berdasarkan TAHUN_LAHIR secara descending, artinya tahun lahir akan di tampilkan mulai dari yang terbesar (siswa termuda) hingga terkecil (siswa termuda).
