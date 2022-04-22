@@ -38,16 +38,16 @@
 ||SELECT nis, nama FROM siswa WHERE alamat='jakarta';|
 |---|---|
 ### Perintah di atas di gunakan untuk mengekstraksi data (NIS dan NAMA) dari tabel SISWA dengan kondisi “field ALAMAT berisi nilai JAKARTA”. Perintah di atas menggunakan operator sama dengan (‘=’), untuk operator lain yang di dukung perintah WHERE, lihat list di bawah ini.
+- =  Sama dengan
+- <> Tidak sama dengan, pada beberapa versi SQL, operator yang di gunakan adalah !=
+- > Lebih besar dari
+- < Lebih kecil dari
+- >= Lebih besar sama dengan
+- <= Lebih kecil sama dengan
+- BETWEEN Antara rentang inklusif
+- LIKE Cari pola yang ‘seperti’ parameter
+- IN Menentukan kemungkinan nilai dari beberapa kolom
 
-=  Sama dengan
-<> Tidak sama dengan, pada beberapa versi SQL, operator yang di gunakan adalah !=
-> Lebih besar dari
-< Lebih kecil dari
->= Lebih besar sama dengan
-<= Lebih kecil sama dengan
-BETWEEN Antara rentang inklusif
-LIKE Cari pola yang ‘seperti’ parameter
-IN Menentukan kemungkinan nilai dari beberapa kolom
 4. Perintah (operator) AND, OR dan NOT
 
 Operator AND, OR dan NOT merupakan perintah dasar SQL yang biasanya di kombinasikan dengan perintah WHERE. Ketiganya di gunakan untuk mem-filter record berdasarkan suatu kondisi, operator AND akan menampilkan record apabila semua kondisi bernilai TRUE, operator OR akan menampilkan record apabila salah satu kondisi bernilai TRUE, sedangkan operator NOT akan menampilkan record apabila semua kondisi bernilai FALSE.
