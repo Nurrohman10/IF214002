@@ -92,8 +92,8 @@
 ||Tabel Dokter|
 |---|---|
 |🔑|ID_Dokter|
-||Nama_Dokter|
-||Nama_Pasien|
+|FK|Nama_Dokter|
+|FK|Nama_Pasien|
 ||Jenis_Kelamin|
 ||alamat|
 ||Jenis_Penyakit(spesialisasi)|
@@ -103,8 +103,8 @@
 ||Tabel Pasien|
 |---|---|
 |🔑|ID_Pasien|
-||Nama_Dokter|
-||Nama_Pasien|
+|FK|Nama_Dokter|
+|FK|Nama_Pasien|
 ||Jenis_Kelamin|
 ||alamat|
 ||Jenis_Penyakit(spesialisasi)|
@@ -114,8 +114,8 @@
 ||Tabel Admin Lab|
 |---|---|
 |🔑|ID_Admin_Lab|
-||Nama_Dokter|
-||Nama_Pasien|
+|FK|Nama_Dokter|
+|FK|Nama_Pasien|
 ||Jenis_Kelamin|
 ||alamat|
 ||Jenis_Penyakit(spesialisasi)|
@@ -124,8 +124,8 @@
 ||Tabel Pemeriksaan|
 |---|---|
 |🔑|ID_Pasien|
-||ID_Admin_Lab|
-||ID_Lab|
+|FK|ID_Admin_Lab|
+|FK|ID_Lab|
 ||Waktu|
 ||Kategori|
 ||Hasil|
@@ -136,5 +136,5 @@
 ||Tabel Laboratorium|
 |---|---|
 |🔑|ID_Pasien|
-||ID_Admin_Lab|
-||ID_Lab| 
+|FK|ID_Admin_Lab|
+|FK|ID_Lab| 
