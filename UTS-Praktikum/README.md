@@ -1,7 +1,7 @@
 # 1. Perintah SELECT
 ### Perintah SELECT merupakan perintah dasar SQL yang di gunakan untuk memilih data dari database. Data yang di kembalikan di simpan dalam tabel yang di sebut result-set.
 
-###Sintaks
+### Sintaks
 ||SELECT kolom1, kolom2, ... FROM nama_tabel;|
 |---|---|
 atau
