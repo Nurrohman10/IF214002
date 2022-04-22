@@ -1,4 +1,6 @@
-# 1. Perintah SELECT
+# 1. Jelaskan contoh-contoh perintah SQL beserta kegunannya !
+
+## 1. Perintah SELECT
 ### Perintah SELECT merupakan perintah dasar SQL yang di gunakan untuk memilih data dari database. Data yang di kembalikan di simpan dalam tabel yang di sebut result-set.
 
 ### Sintaks
@@ -15,7 +17,7 @@
 |---|---|
 ### Perintah pertama di atas di gunakan untuk menyeleksi kolom NIS, NAMA, dan ALAMAT dari tabel SISWA. sedangkan perintah kedua di gunakan untuk menyeleksi semua kolim dari tabel SISWA.
 
-# 2. Perintah SELECT DISTINCT
+## 2. Perintah SELECT DISTINCT
 ### Perintah SELECT DISTINCT merupakan perintah dasar SQL yang di gunakan untuk mengembalikan hanya nilai yang berbeda dari dalam sebuah tabel, dengan kata lain semua record duplikat (record dengan nilai yang sama) yang terdapat pada tabel akan di anggap sebagai satu record/nilai.
 
 ### Sintaks
@@ -26,7 +28,7 @@
 |---|---|
 ### Perintah di atas di gunakan untuk menampilkan kolom ALAMAT dari tabel SISWA dengan mengabaikan nilai yang duplikat, misalnya terdapat 10 siswa dengan alamat ‘Jakarta’, 15 siswa dengan alamat ‘Bandung’, 20 siswa dengan alamat ‘Depok’, dan seterusnya, result-set hanya menampilkan daftar alamat di antaranya ‘Jakarta’, ‘Bandung’, dan ‘Depok’ masing-masing 1 record.
 
-# 3. Perintah WHERE
+## 3. Perintah WHERE
 ### Perintah WHERE merupakan perintah dasar SQL yang di gunakan untuk mem-filter hasil SELECT dengan mengekstrak record yang memenuhi persyaratan tertentu.
 
 ### Sintaks
