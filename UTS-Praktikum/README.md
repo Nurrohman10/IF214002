@@ -10,8 +10,8 @@
 ||SELECT * FROM nama_tabel;|
 |---|---|
 #### Contoh
-||SELECT nis, nama, alamat FROM siswa;|
-|---|---|
+|SELECT nis, nama, alamat FROM siswa;|
+|---|
 #### atau
 ||SELECT * FROM siswa;|
 |---|---|
