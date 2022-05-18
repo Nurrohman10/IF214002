@@ -9,31 +9,31 @@
   ALTER DATABASE DatabaseName CHARACTER SET utf8;
 ```  
 
-#Backup Database to SQL File
+# Backup Database to SQL File
 ```sql
   mysqldump -u Username -p dbNameYouWant > databasename_backup.sql
 ```
-#Repair Tables After Unclean Shutdown
+# Repair Tables After Unclean Shutdown
 ```sql
   mysqlcheck --all-databases;
   mysqlcheck --all-databases --fast;
 ```
 
-#Update
+# Update
 ```sql
   UPDATE table1 SET field1=new_value1 WHERE condition;
   UPDATE table1, table2 SET field1=new_value1, field2=new_value2, ... WHERE
   table1.id1 = table2.id2 AND condition;
 ```
 
-#Keys
+# Keys
 ```sql
   CREATE TABLE table (..., PRIMARY KEY (field1, field2))
   CREATE TABLE table (..., FOREIGN KEY (field1, field2) REFERENCES table2
   (t2_field1, t2_field2))
 ```
 
-#Users and Privileges
+# Users and Privileges
 ```sql
   CREATE USER 'user'@'localhost';
   GRANT ALL PRIVILEGES ON base.* TO 'user'@'localhost' IDENTIFIED BY 'password';
@@ -49,7 +49,7 @@
   Host ‘%’ indicates any host.
 ```
 
-#Main Data Types
+# Main Data Types
 ```sql
   TINYINT (1o: -128 to +127)
   SMALLINT (2o: +-65 000)
@@ -77,7 +77,7 @@
   ENUM ('value1', 'value2', ...) -- (default NULL, or '' if NOT NULL)
 ```
 
-#Select
+# Select
 ```SQL
   SELECT * FROM table;
   SELECT * FROM table1, table2;
@@ -91,7 +91,7 @@
   SELECT DISTINCT field1 FROM ...
 ```
 
-#Conditions
+# Conditions
 ```SQL
   field1 = value1
   field1 <> value1
@@ -105,22 +105,22 @@
   SELECT DISTINCT field1, field2 FROM ...
 ```
 
-#Restore from backup SQL File
+# Restore from backup SQL File
 ```SQL
   mysql - u Username -p dbNameYouWant < databasename_backup.sql;
 ```
-#Insert
+# Insert
 ```SQL
   INSERT INTO table1 (field1, field2) VALUES (value1, value2);
 ```
-#Delete
+# Delete
 ```SQL
   DELETE FROM table1 / TRUNCATE table1
   DELETE FROM table1 WHERE condition
   DELETE FROM table1, table2 FROM table1, table2 WHERE table1.id1 =
     table2.id2 AND condition
 ```
-#Create / Delete / Modify Table
+# Create / Delete / Modify Table
 Create
 ```SQL
   CREATE TABLE table (field1 type1, field2 type2);
@@ -164,7 +164,7 @@ Create
     another_field
 ```
 
-#Reset Root Password
+# Reset Root Password
 ```SQL
   $ /etc/init.d/mysql stop
   $ mysqld_safe --skip-grant-tables
