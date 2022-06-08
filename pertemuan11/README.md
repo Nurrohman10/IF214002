@@ -73,7 +73,7 @@ TABLESPACE pg_default;
 
 ```
 DML
-
+Admin Lab
 ```python
 INSERT INTO "Admin Lab" (id_admin_lab,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
   'adm2',
@@ -111,7 +111,9 @@ INSERT INTO "Admin Lab" (id_admin_lab,nama_dokter,nama_pasien,jenis_kelamin,alam
   'kulit',
   'botox'
 ); SELECT * FROM "Admin Lab";
-
+```
+Dokter
+```python
 INSERT INTO "Dokter" (id_dokter,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
   'dr2',
   'terawan',
@@ -148,7 +150,9 @@ INSERT INTO "Dokter" (id_dokter,nama_dokter,nama_pasien,jenis_kelamin,alamat,jen
   'kulit',
   'botox'
 ); SELECT * FROM "Dokter";
-
+```
+Laboratorium
+```python
 INSERT INTO "Laboratorium" (id_pasien,id_admin_lab,id_lab) VALUES (
   'c2',
   'adm2',
@@ -169,6 +173,9 @@ INSERT INTO "Laboratorium" (id_pasien,id_admin_lab,id_lab) VALUES (
   'adm5',
   'lab5'
 ); SELECT * FROM "Laboratorium";
+```
+Pasien
+```python
 
 INSERT INTO "Pasien" (id_pasien,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
   'c3',
@@ -206,6 +213,9 @@ INSERT INTO "Pasien" (id_pasien,nama_dokter,nama_pasien,jenis_kelamin,alamat,jen
   'kulit',
   'botox'
 ); SELECT * FROM "Pasien";
+```
+Pemeriksaan
+```python
 
 INSERT INTO "Pemeriksaan" (id_pasien,id_admin_lab,id_lab,kategori,hasil,status_pengriman_hasil,waktu_pengriman_hasil,waktu) VALUES (
   'c1',
