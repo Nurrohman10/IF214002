@@ -73,6 +73,7 @@ TABLESPACE pg_default;
 
 ```
 DML
+
 Admin Lab
 ```python
 INSERT INTO "Admin Lab" (id_admin_lab,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
