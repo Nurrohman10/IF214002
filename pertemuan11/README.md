@@ -123,5 +123,7 @@ FROM
 INNER JOIN laboratorium
     ON laboratorium.id_admin_lab = adminlab.id_admin_lab
 order by id_lab
+
+SELECT jenis_pemeriksaan, COUNT(*) AS jumlah from pemeriksaan group by jenis_pemeriksaan order by jenis_pemeriksaan; ") or exit("Error with quering database
 ```
 
