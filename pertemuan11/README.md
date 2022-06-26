@@ -1,63 +1,58 @@
 
 DDL
 ```python
-CREATE TABLE IF NOT EXISTS public."Admin Lab"
+CREATE TABLE IF NOT EXISTS public.adminlab
 (
-    id_admin_lab character varying(30) COLLATE pg_catalog."default" NOT NULL,
-    nama_dokter character(50) COLLATE pg_catalog."default",
-    nama_pasien character(50) COLLATE pg_catalog."default",
+    id_admin_lab integer NOT NULL,
     jenis_kelamin character varying(15) COLLATE pg_catalog."default",
     alamat character varying(75) COLLATE pg_catalog."default",
-    jenis_penyakit_spesialisasi character(50) COLLATE pg_catalog."default",
-    jenis_pemeriksaan character varying(50) COLLATE pg_catalog."default",
-    CONSTRAINT "Admin Lab_pkey" PRIMARY KEY (id_admin_lab)
+    nama_admin character(50) COLLATE pg_catalog."default",
+    CONSTRAINT adminlab_pkey PRIMARY KEY (id_admin_lab)
 )
 
 TABLESPACE pg_default;
 
-CREATE TABLE IF NOT EXISTS public."Dokter"
+CREATE TABLE IF NOT EXISTS public.dokter
 (
-    id_dokter character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    id_dokter integer NOT NULL,
     nama_dokter character(50) COLLATE pg_catalog."default",
-    nama_pasien character(30) COLLATE pg_catalog."default",
     jenis_kelamin character(15) COLLATE pg_catalog."default",
     alamat character varying(75) COLLATE pg_catalog."default",
     jenis_penyakit_spesialisasi character(50) COLLATE pg_catalog."default",
     jenis_pemeriksaan character varying(50) COLLATE pg_catalog."default",
-    CONSTRAINT "Dokter_pkey" PRIMARY KEY (id_dokter)
+    CONSTRAINT dokter_pkey PRIMARY KEY (id_dokter)
 )
 
 TABLESPACE pg_default;
 
-CREATE TABLE IF NOT EXISTS public."Laboratorium"
+CREATE TABLE IF NOT EXISTS public.laboratorium
 (
-    id_pasien character varying(30) COLLATE pg_catalog."default" NOT NULL,
-    id_admin_lab character varying(30) COLLATE pg_catalog."default",
-    id_lab character varying(30) COLLATE pg_catalog."default",
-    CONSTRAINT "Laboratorium_pkey" PRIMARY KEY (id_pasien)
+    id_lab integer NOT NULL,
+    id_admin_lab integer,
+    id_pasien integer NOT NULL,
+    CONSTRAINT laboratorium_pkey PRIMARY KEY (id_lab)
 )
+
 
 TABLESPACE pg_default;
 
 
-CREATE TABLE IF NOT EXISTS public."Pasien"
+CREATE TABLE IF NOT EXISTS public.pasien
 (
-    id_pasien character varying(30) COLLATE pg_catalog."default" NOT NULL,
-    nama_dokter character(50) COLLATE pg_catalog."default",
+    id_pasien integer NOT NULL,
     nama_pasien character(30) COLLATE pg_catalog."default",
     jenis_kelamin character(15) COLLATE pg_catalog."default",
     alamat character varying(75) COLLATE pg_catalog."default",
     jenis_penyakit_spesialisasi character(50) COLLATE pg_catalog."default",
-    jenis_pemeriksaan character varying(75) COLLATE pg_catalog."default",
-    CONSTRAINT "Pasien_pkey" PRIMARY KEY (id_pasien)
+    CONSTRAINT pasien_pkey PRIMARY KEY (id_pasien)
 )
 
 TABLESPACE pg_default;
 
 
-CREATE TABLE IF NOT EXISTS public."Pemeriksaan"
+CREATE TABLE IF NOT EXISTS public.pemeriksaan
 (
-    id_pasien character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    id_pasien integer NOT NULL,
     id_admin_lab character varying(30) COLLATE pg_catalog."default",
     id_lab character varying(30) COLLATE pg_catalog."default",
     kategori character varying(30) COLLATE pg_catalog."default",
@@ -65,8 +60,10 @@ CREATE TABLE IF NOT EXISTS public."Pemeriksaan"
     status_pengriman_hasil character(15) COLLATE pg_catalog."default",
     waktu_pengriman_hasil timestamp(6) with time zone,
     waktu timestamp(6) with time zone,
-    CONSTRAINT "Pemeriksaan_pkey" PRIMARY KEY (id_pasien)
+    jenis_pemeriksaan character varying(75) COLLATE pg_catalog."default",
+    CONSTRAINT pemeriksaan_pkey PRIMARY KEY (id_pasien)
 )
+
 
 TABLESPACE pg_default;
 
