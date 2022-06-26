@@ -73,187 +73,42 @@ DML
 
 Admin Lab
 ```python
-INSERT INTO "Admin Lab" (id_admin_lab,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'adm2',
-  'terawan',
-  'rayhan',
-  'male',
-  'garut',
-  'dalam',
-  'ctscan'
-); SELECT * FROM "Admin Lab";
-INSERT INTO "Admin Lab" (id_admin_lab,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'adm3',
-  'devya',
-  'nenti',
-  'female',
-  'indramayu',
-  'gigi',
-  'medical care '
-); SELECT * FROM "Admin Lab";
-INSERT INTO "Admin Lab" (id_admin_lab,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'adm4',
-  'sadewa',
-  'norma',
-  'female',
-  'bekasi',
-  'kulit',
-  'laser'
-); SELECT * FROM "Admin Lab";
-INSERT INTO "Admin Lab" (id_admin_lab,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'adm5',
-  'calista',
-  'dila',
-  'female',
-  'bandung',
-  'kulit',
-  'botox'
-); SELECT * FROM "Admin Lab";
+INSERT INTO public.adminlab (id_admin_lab,jenis_kelamin,alamat,nama_admin) VALUES
+	 (1,'male','garut','rifqi'),
+	 (2,'male','sumedang','rifky'),
+	 (3,'male','bandung','nugraha'),
+	 (4,'male','rijki','majalengka');
 ```
 Dokter
 ```python
-INSERT INTO "Dokter" (id_dokter,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'dr2',
-  'terawan',
-  'rayhan',
-  'male',
-  'garut',
-  'dalam',
-  'ctscan'
-); SELECT * FROM "Dokter";
-INSERT INTO "Dokter" (id_dokter,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'dr3',
-  'devya',
-  'nenti',
-  'female',
-  'indramayu',
-  'gigi&mulut',
-  'medical care'
-); SELECT * FROM "Dokter";
-INSERT INTO "Dokter" (id_dokter,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'adm4',
-  'sadewa',
-  'norma',
-  'female',
-  'bekasi',
-  'kulit',
-  'laser'
-); SELECT * FROM "Dokter";
-INSERT INTO "Dokter" (id_dokter,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'dr5',
-  'calista',
-  'dila',
-  'female',
-  'bandung',
-  'kulit',
-  'botox'
-); SELECT * FROM "Dokter";
+INSERT INTO public.dokter (id_dokter,nama_dokter,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES
+	 (1,'terawan','male','garut','dalam','ctscan'),
+	 (2,'devya','female','indramayu','gigi','medicalcare'),
+	 (3,'sadewa','female','bekasi','kulit','laser'),
+	 (4,'calista','female','bandung','kulit','botox');
 ```
 Laboratorium
 ```python
-INSERT INTO "Laboratorium" (id_pasien,id_admin_lab,id_lab) VALUES (
-  'c2',
-  'adm2',
-  'lab2'
-); SELECT * FROM "Laboratorium";
-INSERT INTO "Laboratorium" (id_pasien,id_admin_lab,id_lab) VALUES (
-  'c3',
-  'adm3',
-  'lab3'
-); SELECT * FROM "Laboratorium";
-INSERT INTO "Laboratorium" (id_pasien,id_admin_lab,id_lab) VALUES (
-  'c4',
-  'adm4',
-  'lab4'
-); SELECT * FROM "Laboratorium";
-INSERT INTO "Laboratorium" (id_pasien,id_admin_lab,id_lab) VALUES (
-  'c5',
-  'adm5',
-  'lab5'
-); SELECT * FROM "Laboratorium";
+INSERT INTO public.laboratorium (id_lab,id_admin_lab,id_pasien) VALUES
+	 (1,1,1),
+	 (2,2,2),
+	 (3,3,3),
+	 (4,4,4);
 ```
 Pasien
 ```python
-
-INSERT INTO "Pasien" (id_pasien,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'c3',
-  'terawan',
-  'rayhan',
-  'male',
-  'garut',
-  'dalam',
-  'ctscan'
-); SELECT * FROM "Pasien";
-INSERT INTO "Pasien" (id_pasien,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'c4',
-  'devya',
-  'nenti',
-  'female',
-  'indramayu',
-  'gigi',
-  'medical care '
-); SELECT * FROM "Pasien";
-INSERT INTO "Pasien" (id_pasien,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'c5',
-  'sadewa',
-  'norma',
-  'female',
-  'bekasi',
-  'kulit',
-  'laser'
-); SELECT * FROM "Pasien";
-INSERT INTO "Pasien" (id_pasien,nama_dokter,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi,jenis_pemeriksaan) VALUES (
-  'c6',
-  'calista ',
-  'dila',
-  'female',
-  'bandung',
-  'kulit',
-  'botox'
-); SELECT * FROM "Pasien";
+INSERT INTO public.pasien (id_pasien,nama_pasien,jenis_kelamin,alamat,jenis_penyakit_spesialisasi) VALUES
+	 (1,'rayhan','male','garut','dalam'),
+	 (2,'nenti','female','indramayu','gigi'),
+	 (3,'norma','female','bekasi','kulit'),
+	 (4,'dila','female','bandung','kulit');
 ```
 Pemeriksaan
 ```python
-
-INSERT INTO "Pemeriksaan" (id_pasien,id_admin_lab,id_lab,kategori,hasil,status_pengriman_hasil,waktu_pengriman_hasil,waktu) VALUES (
-  'c1',
-  'adm1',
-  'lab1',
-  'cancer',
-  'negative ',
-  'berhasil',
-  '2017-08-09 07:00:00 -7:00',
-  '2017-08-09 07:00:00 -8:00'
-); SELECT * FROM "Pemeriksaan";
-INSERT INTO "Pemeriksaan" (id_pasien,id_admin_lab,id_lab,kategori,hasil,status_pengriman_hasil,waktu_pengriman_hasil,waktu) VALUES (
-  'c2',
-  'adm2',
-  'lab2',
-  'continue ',
-  'negative',
-  'pending',
-  '2017-08-09 07:00:00 -7:00',
-  '2017-08-09 07:00:00 -7:10'
-); SELECT * FROM "Pemeriksaan";
-INSERT INTO "Pemeriksaan" (id_pasien,id_admin_lab,id_lab,kategori,hasil,status_pengriman_hasil,waktu_pengriman_hasil,waktu) VALUES (
-  'c6',
-  'adm3',
-  'lab3',
-  'continue ',
-  'positive ',
-  'berhasil',
-  '2017-08-09 07:00:00 -5:00',
-  '2017-08-09 07:00:00 -7:05'
-); SELECT * FROM "Pemeriksaan";
-INSERT INTO "Pemeriksaan" (id_pasien,id_admin_lab,id_lab,kategori,hasil,status_pengriman_hasil,waktu_pengriman_hasil,waktu) VALUES (
-  'c5',
-  'adm4',
-  'lab4',
-  'low',
-  'negative ',
-  'berhasil',
-  '2017-08-09 07:00:00 -7:07',
-  '2017-08-09 07:00:00 -7:11'
-); SELECT * FROM "Pemeriksaan";
+INSERT INTO public.pemeriksaan (id_pasien,id_admin_lab,id_lab,kategori,hasil,status_pengriman_hasil,waktu_pengriman_hasil,waktu,jenis_pemeriksaan) VALUES
+	 (1,'1','1','cancer','negative','berhasil','2017-08-09 21:00:00+07','2017-08-09 22:00:00+07','ctscan'),
+	 (2,'2','2','continue ','negative','pending','2017-08-09 21:00:00+07','2017-08-09 21:10:00+07','mri'),
+	 (3,'3','3','continue ','positive','berhasil','2017-08-09 19:00:00+07','2017-08-09 21:05:00+07','usg'),
+	 (4,'4','4','low','negative','berhasil','2017-08-09 21:07:00+07','2017-08-09 21:11:00+07','mri');
 ```
 
