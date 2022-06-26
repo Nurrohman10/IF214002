@@ -112,3 +112,16 @@ INSERT INTO public.pemeriksaan (id_pasien,id_admin_lab,id_lab,kategori,hasil,sta
 	 (4,'4','4','low','negative','berhasil','2017-08-09 21:07:00+07','2017-08-09 21:11:00+07','mri');
 ```
 
+
+DQL
+```python
+SELECT
+	adminlab.nama_admin,
+    laboratorium.id_admin_lab
+FROM
+	adminlab
+INNER JOIN laboratorium
+    ON laboratorium.id_admin_lab = adminlab.id_admin_lab
+order by id_lab
+```
+
