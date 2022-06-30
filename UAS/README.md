@@ -9,4 +9,6 @@ pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut D
 1. Menyimpan Hasil Lab
 2. Mengirimkan Hasil Lab
 
-c. 
+c. ![image](https://user-images.githubusercontent.com/100698149/176569181-4a9a0f75-2eba-41f4-b8de-2cfcca47ac4e.png)
+
+d. 
