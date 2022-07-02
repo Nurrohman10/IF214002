@@ -12,7 +12,8 @@ pasien dengan sistem yang di kelola oleh dokter yang manangani pasien tersebut D
 
 2. Mengirimkan Hasil Lab
 
-
+# DLL, DML & DQL
+https://github.com/Nurrohman10/IF214002/tree/main/pertemuan11
 
 
 # Link Youtube 
